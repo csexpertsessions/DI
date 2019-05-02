@@ -10,5 +10,5 @@ container.RegisterType<DataRepository>();
 container.RegisterType<DataContext>();
 container.RegisterType<Notifier>();
 ```
-6. I `Main()` erstattes `= new DataRepository();` med `IOC.container.Resolve<DataContext>();`
+6. I `Main()` erstattes `= new DataRepository();` med `IOC.container.Resolve<DataRepository>();`
 7: I `Datarepository.cs` er erstattes `new DataContext()` og `new Notifier()` med resolve på IOC container
