@@ -10,4 +10,4 @@ container.RegisterType<DataRepository>();
 container.RegisterType<DataContext>();
 container.RegisterType<Notifier>();
 ```
-6. djkskdjs
+6. I `Main()` erstattes `= new DataRepository();` med `IOC.container.Resolve<DataContext>();`
