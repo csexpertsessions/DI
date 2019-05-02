@@ -6,5 +6,8 @@
 4. Lav en statisk konstruktør som sætter `container`til en ny instans af `UnityContainer`
 5. Registrer typerne DataRepository, Datacontext og Notifie
 ```C#
-Hello world
+container.RegisterType<DataRepository>();
+container.RegisterType<DataContext>();
+container.RegisterType<Notifier>();
 ```
+6. djkskdjs
